@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.tizen.nativecore.NativeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="smart-blind" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345" name="Debug" parent="org.tizen.nativecore.config.sbi.gcc45.app.debug">
+                    					
+                    <folderInfo id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345." name="/" resourcePath="">
+                        						
+                        <toolChain id="org.tizen.nativecore.toolchain.sbi.gcc45.app.debug.611539762" name="Tizen Native Toolchain" superClass="org.tizen.nativecore.toolchain.sbi.gcc45.app.debug">
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.tizen.nativeide.target.sbi.gnu.platform.base.588449540" osList="linux,win32" superClass="org.tizen.nativeide.target.sbi.gnu.platform.base"/>
+                            							
+                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/smart-blind}/Debug" enableAutoBuild="true" id="org.tizen.nativecore.target.sbi.gnu.builder.961972489" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
+                            							
+                            <tool command="arm-linux-gnueabi-ar" id="org.tizen.nativecore.tool.sbi.gnu.archiver.786630560" name="Archiver" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver"/>
+                            							
+                            <tool command="clang++" id="org.tizen.nativecore.tool.sbi.gnu.cpp.compiler.1437279340" name="C++ Compiler" superClass="org.tizen.nativecore.tool.sbi.gnu.cpp.compiler">
+                                								
+                                <option id="gnu.cpp.compiler.option.optimization.level.1282139812" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.cpp.compiler.debugging.level.max" id="sbi.gnu.cpp.compiler.option.debugging.level.core.1579999524" name="Debug level" superClass="sbi.gnu.cpp.compiler.option.debugging.level.core" valueType="enumerated"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.compiler.option.misc.pic.core.1485987024" name="-fPIC option" superClass="sbi.gnu.cpp.compiler.option.misc.pic.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.1109780928" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.854556687" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appcore-agent&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appfw&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dlog&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ecore-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/efl-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1/eina&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eo-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/gio-unix-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/glib-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/minizip&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.1671438041" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value=" -fPIE"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-mthumb"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.include.paths.124356411" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.1482965669" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="Native_API"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-things"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation.1008357656" superClass="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="TIZEN_DEPRECATION"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="DEPRECATION_WARNING"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="_DEBUG"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1382562720" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool command="clang" id="org.tizen.nativecore.tool.sbi.gnu.c.compiler.512673844" name="C Compiler" superClass="org.tizen.nativecore.tool.sbi.gnu.c.compiler">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.427976708" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.c.debugging.level.max" id="sbi.gnu.c.compiler.option.debugging.level.core.494109188" name="Debug level" superClass="sbi.gnu.c.compiler.option.debugging.level.core" valueType="enumerated"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.c.compiler.option.misc.pic.core.142082601" name="-fPIC option" superClass="sbi.gnu.c.compiler.option.misc.pic.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.133441897" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.792268531" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appcore-agent&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appfw&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dlog&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ecore-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/efl-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1/eina&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eo-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/gio-unix-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/glib-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/minizip&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.1631838969" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value=" -fPIE"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-mthumb"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.c.compiler.option.include.paths.1655724879" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks.core.1521997791" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="Native_API"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-things"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation.1595744898" superClass="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="TIZEN_DEPRECATION"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="DEPRECATION_WARNING"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="_DEBUG"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1134833125" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="org.tizen.nativeide.tool.sbi.gnu.c.linker.base.259387756" name="C Linker" superClass="org.tizen.nativeide.tool.sbi.gnu.c.linker.base"/>
+                            							
+                            <tool command="clang++" id="org.tizen.nativecore.tool.sbi.gnu.cpp.linker.1609529239" name="C++ Linker" superClass="org.tizen.nativecore.tool.sbi.gnu.cpp.linker">
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.link.option.strip.491091650" name="Omit all symbol information (-s)" superClass="sbi.gnu.cpp.link.option.strip" valueType="boolean"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.linker.option.shared_flag.core.1512920854" name="Linker.Shared" superClass="sbi.gnu.cpp.linker.option.shared_flag.core" valueType="boolean"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.linker.option.noundefined.core.1057977747" name="Report unresolved symbol references (-Wl,--no-undefined)" superClass="sbi.gnu.cpp.linker.option.noundefined.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1272757498" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_LINKER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_LINKER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-pie -lpthread "/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Xlinker --version-script=&quot;${PROJ_PATH}/.exportMap&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/usr/lib&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/../iot-things-4.0-device.core/usr/lib&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="$(RS_LIBRARIES)"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.paths.1369147518" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.libs.1082130017" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="oicdastack"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="sdkapi"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1218710096" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool command="#{PLATFORM_DEFAULT_GCC_PREFIX}as" id="org.tizen.nativeapp.tool.sbi.gnu.assembler.base.1720579698" name="Assembler" superClass="org.tizen.nativeapp.tool.sbi.gnu.assembler.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1044397358" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="org.tizen.nativecore.tool.fnmapgen.1047853461" name="C FN-Map Generator" superClass="org.tizen.nativecore.tool.fnmapgen"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.fnmapgen.cpp.1260194585" name="C++ FN-Map Generator" superClass="org.tizen.nativecore.tool.fnmapgen.cpp"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.ast.1676405848" name="C Static Analyzer" superClass="org.tizen.nativecore.tool.ast"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.ast.cpp.757839070" name="C++ Static Analyzer" superClass="org.tizen.nativecore.tool.ast.cpp"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.gnu.archiver.mergelib.1231386660" name="Archive Generator" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver.mergelib"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.po.compiler.230537812" name="PO Resource Compiler" superClass="org.tizen.nativecore.tool.sbi.po.compiler"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.edc.compiler.1565517199" name="EDC Resource Compiler" superClass="org.tizen.nativecore.tool.sbi.edc.compiler"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="res"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="shared"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447" moduleId="org.eclipse.cdt.core.settings" name="Release">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.tizen.nativecore.NativeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="smart-blind" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447" name="Release" parent="org.tizen.nativecore.config.sbi.gcc45.app.release">
+                    					
+                    <folderInfo id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447." name="/" resourcePath="">
+                        						
+                        <toolChain id="org.tizen.nativecore.toolchain.sbi.gcc45.app.release.1835949389" name="Tizen Native Toolchain" superClass="org.tizen.nativecore.toolchain.sbi.gcc45.app.release">
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.tizen.nativeide.target.sbi.gnu.platform.base.1474242873" osList="linux,win32" superClass="org.tizen.nativeide.target.sbi.gnu.platform.base"/>
+                            							
+                            <builder buildPath="${workspace_loc:/smart-blind}/Release" id="org.tizen.nativecore.target.sbi.gnu.builder.1319584467" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
+                            							
+                            <tool command="arm-linux-gnueabi-ar" id="org.tizen.nativecore.tool.sbi.gnu.archiver.1688011617" name="Archiver" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver"/>
+                            							
+                            <tool command="clang++" id="org.tizen.nativecore.tool.sbi.gnu.cpp.compiler.265781889" name="C++ Compiler" superClass="org.tizen.nativecore.tool.sbi.gnu.cpp.compiler">
+                                								
+                                <option id="gnu.cpp.compiler.option.optimization.level.1840608126" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="sbi.gnu.cpp.compiler.option.debugging.level.core.2039835250" name="Debug level" superClass="sbi.gnu.cpp.compiler.option.debugging.level.core" valueType="enumerated"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.compiler.option.misc.pic.core.1616887854" name="-fPIC option" superClass="sbi.gnu.cpp.compiler.option.misc.pic.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.1897469350" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.349764408" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appcore-agent&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appfw&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dlog&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ecore-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/efl-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1/eina&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eo-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/gio-unix-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/glib-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/minizip&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.644139045" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value=" -fPIE"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-mthumb"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.include.paths.1742746573" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.138538818" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="Native_API"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-things"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.345410264" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool command="clang" id="org.tizen.nativecore.tool.sbi.gnu.c.compiler.2081951283" name="C Compiler" superClass="org.tizen.nativecore.tool.sbi.gnu.c.compiler">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.325436731" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.c.debugging.level.none" id="sbi.gnu.c.compiler.option.debugging.level.core.245781463" name="Debug level" superClass="sbi.gnu.c.compiler.option.debugging.level.core" valueType="enumerated"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.c.compiler.option.misc.pic.core.84228738" name="-fPIC option" superClass="sbi.gnu.c.compiler.option.misc.pic.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.298053056" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.1495113514" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appcore-agent&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/appfw&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dlog&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ecore-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/efl-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eina-1/eina&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/eo-1&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/gio-unix-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/glib-2.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/minizip&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.165770040" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_COMPILER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value=" -fPIE"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-mthumb"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.c.compiler.option.include.paths.2038091548" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="sbi.gnu.c.compiler.option.frameworks.core.201431878" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
+                                    									
+                                    <listOptionValue builtIn="false" value="Native_API"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="iot-things"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2075162554" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="org.tizen.nativeide.tool.sbi.gnu.c.linker.base.1628103167" name="C Linker" superClass="org.tizen.nativeide.tool.sbi.gnu.c.linker.base"/>
+                            							
+                            <tool command="clang++" id="org.tizen.nativecore.tool.sbi.gnu.cpp.linker.816180912" name="C++ Linker" superClass="org.tizen.nativecore.tool.sbi.gnu.cpp.linker">
+                                								
+                                <option defaultValue="true" id="sbi.gnu.cpp.link.option.strip.315063264" name="Omit all symbol information (-s)" superClass="sbi.gnu.cpp.link.option.strip" valueType="boolean"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.linker.option.shared_flag.core.1363552698" name="Linker.Shared" superClass="sbi.gnu.cpp.linker.option.shared_flag.core" valueType="boolean"/>
+                                								
+                                <option defaultValue="false" id="sbi.gnu.cpp.linker.option.noundefined.core.108222538" name="Report unresolved symbol references (-Wl,--no-undefined)" superClass="sbi.gnu.cpp.linker.option.noundefined.core" valueType="boolean"/>
+                                								
+                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1838858372" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="${TC_LINKER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${RS_LINKER_MISC}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-pie -lpthread "/>
+                                    									
+                                    <listOptionValue builtIn="false" value="--sysroot=&quot;${SBI_SYSROOT}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Xlinker --version-script=&quot;${PROJ_PATH}/.exportMap&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/usr/lib&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/../iot-things-4.0-device.core/usr/lib&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="$(RS_LIBRARIES)"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.paths.630690609" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.libs.1849184143" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="oicdastack"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="sdkapi"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1007940209" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool command="#{PLATFORM_DEFAULT_GCC_PREFIX}as" id="org.tizen.nativeapp.tool.sbi.gnu.assembler.base.1919490904" name="Assembler" superClass="org.tizen.nativeapp.tool.sbi.gnu.assembler.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.596118887" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="org.tizen.nativecore.tool.fnmapgen.237114660" name="C FN-Map Generator" superClass="org.tizen.nativecore.tool.fnmapgen"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.fnmapgen.cpp.1379592682" name="C++ FN-Map Generator" superClass="org.tizen.nativecore.tool.fnmapgen.cpp"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.ast.1860833120" name="C Static Analyzer" superClass="org.tizen.nativecore.tool.ast"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.ast.cpp.113871631" name="C++ Static Analyzer" superClass="org.tizen.nativecore.tool.ast.cpp"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.gnu.archiver.mergelib.1740391544" name="Archive Generator" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver.mergelib"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.po.compiler.1845280329" name="PO Resource Compiler" superClass="org.tizen.nativecore.tool.sbi.po.compiler"/>
+                            							
+                            <tool id="org.tizen.nativecore.tool.sbi.edc.compiler.1192681958" name="EDC Resource Compiler" superClass="org.tizen.nativecore.tool.sbi.edc.compiler"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="res"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="shared"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="smart-blind.org.tizen.nativecore.target.sbi.gcc45.app.1161948160" name="Tizen Native Application" projectType="org.tizen.nativecore.target.sbi.gcc45.app"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    
+</cproject>
