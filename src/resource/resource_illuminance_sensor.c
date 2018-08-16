@@ -58,6 +58,7 @@ int resource_read_illuminance_sensor(int i2c_bus, uint32_t *out_value)
 			return -1;
 		}
 		resource_sensor_s.opened = 1;
+		write = 0;
 	}
 
 	buf[0] = 0x10;

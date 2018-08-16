@@ -43,7 +43,7 @@
 #define I2C_BUS_NUMBER (1)
 
 // QUIZ
-#define SENSOR_GATHER_INTERVAL (100.0f)
+#define SENSOR_GATHER_INTERVAL (1.0f)
 
 // QUIZ
 //#define USE_ST_SDK
@@ -75,7 +75,7 @@ static inline int __get_illuminance(void *data, unsigned int *illuminance_value)
 	retv_if(!ad->illuminance_data, -1);
 
 	// QUIZ
-	//ret = resource_read_illuminance_sensor(/* ? */, illuminance_value);
+	ret = resource_read_illuminance_sensor(1, illuminance_value);
 	retv_if(ret != 0, -1);
 
 	sensor_data_set_uint(ad->illuminance_data, *illuminance_value);
@@ -106,14 +106,12 @@ static int __set_servo_motor(void *data, int on)
 		power_value = BLIND_DOWN;
 	}
 
-	ret = resource_set_servo_motor_value(duty_cycle);
+#if 0 // QUIZ
+	ret = resource_set_servo_motor_value(/* duty_cycle */);
 	retv_if(ret != 0, -1);
+#endif
 
 	sensor_data_set_string(ad->power_data, power_value, strlen(power_value));
-
-#ifdef USE_ST_SDK
-	st_things_notify_observers(SENSOR_URI_POWER);
-#endif
 
 	return 0;
 }
@@ -138,7 +136,9 @@ static Eina_Bool __illuminance_to_servo_motor(void *data)
 	ret = __get_illuminance(ad, &illuminance_value);
 	retv_if(ret != 0, ECORE_CALLBACK_RENEW);
 
-#if 0 // # Senario : Illuminance sensor
+#if 1 // # Senario : Illuminance sensor
+	int on = 0;
+
 	if (illuminance_value < ILLUMINATION_CRITERIA) {
 		on = 0;
 	} else {
@@ -251,7 +251,7 @@ static bool handle_set_request(st_things_set_request_message_s* req_msg, st_thin
 			} else {
 				ret = __set_servo_motor(g_ad, 0);
 			}
-
+			free(str);
 			retv_if(ret != 0, false);
 		} else {
 			_E("cannot get a string value");
@@ -361,9 +361,6 @@ static void service_app_control(app_control_h app_control, void *user_data)
 static void service_app_terminate(void *user_data)
 {
 	app_data *ad = (app_data *)user_data;
-
-	if (ad->getter_illuminance)
-		ecore_timer_del(ad->getter_illuminance);
 
 	resource_close_illuminance_sensor();
 	resource_close_servo_motor();

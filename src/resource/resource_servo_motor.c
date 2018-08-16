@@ -19,7 +19,8 @@
 #include <peripheral_io.h>
 #include "log.h"
 
-#define SERVO_MOTOR_CHANNER (0)
+#define SERVO_MOTOR_CHANNEL (0)
+#define SERVO_MOTOR_DEFAULT_PERIOD 20.0
 
 static peripheral_pwm_h g_pwm_h;
 
@@ -35,15 +36,20 @@ int resource_set_servo_motor_value(double duty_cycle_ms)
 {
 	int ret = 0;
 
+	if (duty_cycle_ms >= SERVO_MOTOR_DEFAULT_PERIOD) {
+		_E("Too large duty cycle");
+		return -1;
+	}
+
 	if (!g_pwm_h) {
-		ret = peripheral_pwm_open(0, SERVO_MOTOR_CHANNER, &g_pwm_h);
+		ret = peripheral_pwm_open(0, SERVO_MOTOR_CHANNEL, &g_pwm_h);
 		if (ret != PERIPHERAL_ERROR_NONE) {
 			_E("failed to open servo motor with ch : %s", get_error_message(ret));
 			return -1;
 		}
 	}
 
-	ret = peripheral_pwm_set_period(g_pwm_h, 20 * 1000 * 1000);
+	ret = peripheral_pwm_set_period(g_pwm_h, SERVO_MOTOR_DEFAULT_PERIOD * 1000 * 1000);
 	if (ret != PERIPHERAL_ERROR_NONE) {
 		_E("failed to set period : %s", get_error_message(ret));
 		return -1;
