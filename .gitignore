@@ -1,2 +1,6 @@
 /Debug/
 /SA_Report/
+/.sign/
+/res/certificate.pem
+/res/privatekey.der
+/crash-info/

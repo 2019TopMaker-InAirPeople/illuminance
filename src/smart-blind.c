@@ -36,14 +36,12 @@
 #define SENSOR_KEY_ILLUMINANCE "illuminance"
 #define SENSOR_KEY_RANGE "range"
 
-#define SENSOR_URI_POWER "/capability/switch/main/0"
-#define SENSOR_KEY_POWER "power"
-#define SENSOR_POWER_INITIALIZING "off"
+#define SENSOR_URI_DOOR "/capability/doorControl/main/0"
+#define SENSOR_KEY_DOOR "doorState"
+#define SENSOR_POWER_INITIALIZING BLIND_DOWN
 
 #define I2C_BUS_NUMBER (1)
-
-// QUIZ
-#define SENSOR_GATHER_INTERVAL (1.0f)
+#define SENSOR_GATHER_INTERVAL (5.0f)
 
 // QUIZ
 //#define USE_ST_SDK
@@ -63,8 +61,8 @@ static app_data *g_ad = NULL;
 #define SERVO_MOTOR_DUTY_CYCLE_COUNTER_CLOCKWISE 1.0
 #define SERVO_MOTOR_DUTY_CYCLE_CLOCKWISE 2.0
 
-#define BLIND_UP "on"
-#define BLIND_DOWN "off"
+#define BLIND_UP "opening"
+#define BLIND_DOWN "closing"
 
 static inline int __get_illuminance(void *data, unsigned int *illuminance_value)
 {
@@ -75,8 +73,10 @@ static inline int __get_illuminance(void *data, unsigned int *illuminance_value)
 	retv_if(!ad->illuminance_data, -1);
 
 	// QUIZ
-	ret = resource_read_illuminance_sensor(1, illuminance_value);
+#if 0
+	ret = resource_read_illuminance_sensor(/*** BUS ***/, illuminance_value);
 	retv_if(ret != 0, -1);
+#endif
 
 	sensor_data_set_uint(ad->illuminance_data, *illuminance_value);
 	_D("Illuminance value : %u", *illuminance_value);
@@ -107,11 +107,12 @@ static int __set_servo_motor(void *data, int on)
 	}
 
 #if 0 // QUIZ
-	ret = resource_set_servo_motor_value(/* duty_cycle */);
+	ret = resource_set_servo_motor_value(/*** DUTY CYCLE ***/);
 	retv_if(ret != 0, -1);
 #endif
 
 	sensor_data_set_string(ad->power_data, power_value, strlen(power_value));
+	st_things_notify_observers(SENSOR_URI_DOOR);
 
 	return 0;
 }
@@ -136,7 +137,7 @@ static Eina_Bool __illuminance_to_servo_motor(void *data)
 	ret = __get_illuminance(ad, &illuminance_value);
 	retv_if(ret != 0, ECORE_CALLBACK_RENEW);
 
-#if 1 // # Senario : Illuminance sensor
+#if 0 // # Senario : Illuminance sensor
 	int on = 0;
 
 	if (illuminance_value < ILLUMINATION_CRITERIA) {
@@ -207,21 +208,23 @@ static bool handle_get_request(st_things_get_request_message_s* req_msg, st_thin
 	_D("resource_uri [%s]", req_msg->resource_uri);
 	retv_if(!g_ad, false);
 
-	if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_ILLUMINANCE)) {
+	// QUIZ
+	if (0 == strcmp(req_msg->resource_uri, /*** URI ILLUMINANCE ***/)) {
 		if (req_msg->has_property_key(req_msg, SENSOR_KEY_ILLUMINANCE)) {
 			unsigned int value = 0;
 			sensor_data_get_uint(g_ad->illuminance_data, &value);
 			resp_rep->set_int_value(resp_rep, SENSOR_KEY_ILLUMINANCE, value);
 		}
 		return true;
-	} else if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_POWER)) {
-		if (req_msg->has_property_key(req_msg, SENSOR_KEY_POWER)) {
+	// QUIZ
+	} else if (0 == strcmp(req_msg->resource_uri, /*** URI_DOOR ***/)) {
+		if (req_msg->has_property_key(req_msg, SENSOR_KEY_DOOR)) {
 			const char *str = NULL;
 			sensor_data_get_string(g_ad->power_data, &str);
 			if (!str) {
 				str = SENSOR_POWER_INITIALIZING;
 			}
-			resp_rep->set_str_value(resp_rep, SENSOR_KEY_POWER, str);
+			resp_rep->set_str_value(resp_rep, SENSOR_KEY_DOOR, str);
 			_D("Power : %s", str);
 		}
 		return true;
@@ -235,18 +238,19 @@ static bool handle_set_request(st_things_set_request_message_s* req_msg, st_thin
 	_D("resource_uri [%s]", req_msg->resource_uri);
 	retv_if(!g_ad, false);
 
-	if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_POWER)) {
+		// QUIZ
+		if (0 == strcmp(req_msg->resource_uri, /*** URI DOOR ***/)) {
 		int ret = 0;
 		char *str = NULL;
 
-		if (req_msg->rep->get_str_value(req_msg->rep, SENSOR_KEY_POWER, &str)) {
+		if (req_msg->rep->get_str_value(req_msg->rep, SENSOR_KEY_DOOR, &str)) {
 			retv_if(!str, false);
-			_D("set [%s:%s] == %s", SENSOR_URI_POWER, SENSOR_KEY_POWER, str);
+			_D("set [%s:%s] == %s", SENSOR_URI_DOOR, SENSOR_KEY_DOOR, str);
 
 			sensor_data_set_string(g_ad->power_data, str, strlen(str));
-			resp_rep->set_str_value(resp_rep, SENSOR_KEY_POWER, str);
+			resp_rep->set_str_value(resp_rep, SENSOR_KEY_DOOR, str);
 
-			if (0 == strcmp(str, "on")) {
+			if (0 == strcmp(str, "opening")) {
 				ret = __set_servo_motor(g_ad, 1);
 			} else {
 				ret = __set_servo_motor(g_ad, 0);
