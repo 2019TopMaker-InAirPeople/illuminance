@@ -21,7 +21,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <pthread.h>
 #include <unistd.h>
 #include <Ecore.h>
 
@@ -43,7 +42,7 @@
 #define I2C_BUS_NUMBER (1)
 #define SENSOR_GATHER_INTERVAL (5.0f)
 
-// QUIZ
+// If you want to use SmartThings, Please uncomment this define */
 //#define USE_ST_SDK
 
 typedef struct app_data_s {
@@ -72,11 +71,8 @@ static inline int __get_illuminance(void *data, unsigned int *illuminance_value)
 	retv_if(!ad, -1);
 	retv_if(!ad->illuminance_data, -1);
 
-	// QUIZ
-#if 0
-	ret = resource_read_illuminance_sensor(/*** BUS ***/, illuminance_value);
+	ret = resource_read_illuminance_sensor(I2C_BUS_NUMBER, illuminance_value);
 	retv_if(ret != 0, -1);
-#endif
 
 	sensor_data_set_uint(ad->illuminance_data, *illuminance_value);
 	_D("Illuminance value : %u", *illuminance_value);
@@ -106,13 +102,14 @@ static int __set_servo_motor(void *data, int on)
 		power_value = BLIND_DOWN;
 	}
 
-#if 0 // QUIZ
-	ret = resource_set_servo_motor_value(/*** DUTY CYCLE ***/);
+	ret = resource_set_servo_motor_value(duty_cycle);
 	retv_if(ret != 0, -1);
-#endif
 
 	sensor_data_set_string(ad->power_data, power_value, strlen(power_value));
+
+#ifdef USE_ST_SDK
 	st_things_notify_observers(SENSOR_URI_DOOR);
+#endif
 
 	return 0;
 }
@@ -137,7 +134,7 @@ static Eina_Bool __illuminance_to_servo_motor(void *data)
 	ret = __get_illuminance(ad, &illuminance_value);
 	retv_if(ret != 0, ECORE_CALLBACK_RENEW);
 
-#if 0 // # Senario : Illuminance sensor
+#if 1 // If you want to control MOTOR from Cloud, please deactivate these codes.
 	int on = 0;
 
 	if (illuminance_value < ILLUMINATION_CRITERIA) {
@@ -208,16 +205,14 @@ static bool handle_get_request(st_things_get_request_message_s* req_msg, st_thin
 	_D("resource_uri [%s]", req_msg->resource_uri);
 	retv_if(!g_ad, false);
 
-	// QUIZ
-	if (0 == strcmp(req_msg->resource_uri, /*** URI ILLUMINANCE ***/)) {
+	if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_ILLUMINANCE)) {
 		if (req_msg->has_property_key(req_msg, SENSOR_KEY_ILLUMINANCE)) {
 			unsigned int value = 0;
 			sensor_data_get_uint(g_ad->illuminance_data, &value);
 			resp_rep->set_int_value(resp_rep, SENSOR_KEY_ILLUMINANCE, value);
 		}
 		return true;
-	// QUIZ
-	} else if (0 == strcmp(req_msg->resource_uri, /*** URI_DOOR ***/)) {
+	} else if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_DOOR)) {
 		if (req_msg->has_property_key(req_msg, SENSOR_KEY_DOOR)) {
 			const char *str = NULL;
 			sensor_data_get_string(g_ad->power_data, &str);
@@ -238,8 +233,7 @@ static bool handle_set_request(st_things_set_request_message_s* req_msg, st_thin
 	_D("resource_uri [%s]", req_msg->resource_uri);
 	retv_if(!g_ad, false);
 
-		// QUIZ
-		if (0 == strcmp(req_msg->resource_uri, /*** URI DOOR ***/)) {
+		if (0 == strcmp(req_msg->resource_uri, SENSOR_URI_DOOR)) {
 		int ret = 0;
 		char *str = NULL;
 
