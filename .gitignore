@@ -4,3 +4,6 @@
 /res/certificate.pem
 /res/privatekey.der
 /crash-info/
+/.vscode/
+/.settings/
+.package-stamp

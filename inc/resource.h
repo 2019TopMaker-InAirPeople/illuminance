@@ -16,13 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef __POSITION_FINDER_RESOURCE_H__
-#define __POSITION_FINDER_RESOURCE_H__
+#ifndef __RESOURCE_H__
+#define __RESOURCE_H__
 
 #include <peripheral_io.h>
-
 #include "resource_internal.h"
 #include "resource/resource_illuminance_sensor.h"
-#include "resource/resource_servo_motor.h"
 
-#endif /* __POSITION_FINDER_RESOURCE_H__ */
+#endif /* __RESOURCE_H__ */

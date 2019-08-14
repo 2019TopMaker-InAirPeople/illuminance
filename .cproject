@@ -53,13 +53,13 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.cpp.compiler.option.misc.pic.core.1485987024" name="-fPIC option" superClass="sbi.gnu.cpp.compiler.option.misc.pic.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.1109780928" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
+                                <option id="sbi.gnu.cpp.compiler.option.1109780928" name="Tizen-Target" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
                                     									
-                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    <listOptionValue builtIn="false" value="iot-headless-5.0-device.core_llvm40.armel"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.854556687" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.854556687" name="Tizen-Frameworks-Include-Path" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
                                     									
@@ -72,8 +72,6 @@
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
                                     									
@@ -95,6 +93,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotjs&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
@@ -103,17 +103,19 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/notification&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/rpc-port&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.1671438041" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.1671438041" name="Tizen-Frameworks-Other-Cflags" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
                                     									
@@ -127,13 +129,13 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.compiler.option.include.paths.124356411" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.cpp.compiler.option.include.paths.124356411" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.1482965669" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.1482965669" name="Tizen-Frameworks" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
                                     									
                                     <listOptionValue builtIn="false" value="Native_API"/>
                                     									
@@ -141,7 +143,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation.1008357656" superClass="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation" valueType="definedSymbols">
+                                <option id="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation.1008357656" name="Defined symbols (-D)" superClass="sbi.gnu.cpp.compiler.option.preprocessor.def.deprecation" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="TIZEN_DEPRECATION"/>
                                     									
@@ -163,13 +165,13 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.c.compiler.option.misc.pic.core.142082601" name="-fPIC option" superClass="sbi.gnu.c.compiler.option.misc.pic.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.133441897" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
+                                <option id="sbi.gnu.c.compiler.option.133441897" name="Tizen-Target" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
                                     									
-                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    <listOptionValue builtIn="false" value="iot-headless-5.0-device.core_llvm40.armel"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.792268531" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
+                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.792268531" name="Tizen-Frameworks-Include-Path" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
                                     									
@@ -182,8 +184,6 @@
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
                                     									
@@ -205,6 +205,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotjs&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
@@ -213,17 +215,19 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/notification&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/rpc-port&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.1631838969" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.1631838969" name="Tizen-Frameworks-Other-Cflags" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" useByScannerDiscovery="false" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
                                     									
@@ -237,13 +241,13 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.c.compiler.option.include.paths.1655724879" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.1655724879" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks.core.1521997791" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
+                                <option id="sbi.gnu.c.compiler.option.frameworks.core.1521997791" name="Tizen-Frameworks" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
                                     									
                                     <listOptionValue builtIn="false" value="Native_API"/>
                                     									
@@ -251,7 +255,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation.1595744898" superClass="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation" valueType="definedSymbols">
+                                <option id="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation.1595744898" name="Defined symbols (-D)" superClass="sbi.gnu.c.compiler.option.preprocessor.def.symbols.deprecation" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="TIZEN_DEPRECATION"/>
                                     									
@@ -275,7 +279,7 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.cpp.linker.option.noundefined.core.1057977747" name="Report unresolved symbol references (-Wl,--no-undefined)" superClass="sbi.gnu.cpp.linker.option.noundefined.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1272757498" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" valueType="stringList">
+                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1272757498" name="Tizen-Frameworks-Other-Lflags" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" useByScannerDiscovery="false" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_LINKER_MISC}"/>
                                     									
@@ -289,25 +293,17 @@
                                     									
                                     <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/usr/lib&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/../iot-things-4.0-device.core/usr/lib&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="$(RS_LIBRARIES)"/>
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.paths.1369147518" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                <option id="gnu.cpp.link.option.paths.1369147518" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.libs.1082130017" superClass="gnu.cpp.link.option.libs" valueType="libs">
-                                    									
-                                    <listOptionValue builtIn="false" value="oicdastack"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="sdkapi"/>
-                                    								
-                                </option>
+                                <option id="gnu.cpp.link.option.libs.1082130017" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1218710096" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
@@ -413,13 +409,13 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.cpp.compiler.option.misc.pic.core.1616887854" name="-fPIC option" superClass="sbi.gnu.cpp.compiler.option.misc.pic.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.1897469350" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
+                                <option id="sbi.gnu.cpp.compiler.option.1897469350" name="Tizen-Target" superClass="sbi.gnu.cpp.compiler.option" valueType="userObjs">
                                     									
-                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    <listOptionValue builtIn="false" value="iot-headless-5.0-device.core_llvm40.armel"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.349764408" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_inc.core.349764408" name="Tizen-Frameworks-Include-Path" superClass="sbi.gnu.cpp.compiler.option.frameworks_inc.core" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
                                     									
@@ -432,8 +428,6 @@
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
                                     									
@@ -455,6 +449,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotjs&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
@@ -463,17 +459,19 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/notification&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/rpc-port&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.644139045" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks_cflags.core.644139045" name="Tizen-Frameworks-Other-Cflags" superClass="sbi.gnu.cpp.compiler.option.frameworks_cflags.core" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
                                     									
@@ -487,13 +485,13 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.compiler.option.include.paths.1742746573" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.cpp.compiler.option.include.paths.1742746573" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.138538818" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
+                                <option id="sbi.gnu.cpp.compiler.option.frameworks.core.138538818" name="Tizen-Frameworks" superClass="sbi.gnu.cpp.compiler.option.frameworks.core" valueType="userObjs">
                                     									
                                     <listOptionValue builtIn="false" value="Native_API"/>
                                     									
@@ -513,13 +511,13 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.c.compiler.option.misc.pic.core.84228738" name="-fPIC option" superClass="sbi.gnu.c.compiler.option.misc.pic.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.298053056" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
+                                <option id="sbi.gnu.c.compiler.option.298053056" name="Tizen-Target" superClass="sbi.gnu.c.compiler.option" valueType="userObjs">
                                     									
-                                    <listOptionValue builtIn="false" value="iot-headless-4.0-device.core_llvm40.armel"/>
+                                    <listOptionValue builtIn="false" value="iot-headless-5.0-device.core_llvm40.armel"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.1495113514" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
+                                <option id="sbi.gnu.c.compiler.option.frameworks_inc.core.1495113514" name="Tizen-Frameworks-Include-Path" superClass="sbi.gnu.c.compiler.option.frameworks_inc.core" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/libxml2&quot;"/>
                                     									
@@ -532,8 +530,6 @@
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/base&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/ckm&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/dbus-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/device&quot;"/>
                                     									
@@ -555,6 +551,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotcon&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/iotjs&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/json-glib-1.0&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/media&quot;"/>
@@ -563,17 +561,19 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/network&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/notification&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/rpc-port&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/storage&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/include/system&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/dbus-1.0/include&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${SBI_SYSROOT}/usr/lib/glib-2.0/include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.165770040" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" valueType="stringList">
+                                <option id="sbi.gnu.c.compiler.option.frameworks_cflags.core.165770040" name="Tizen-Frameworks-Other-Cflags" superClass="sbi.gnu.c.compiler.option.frameworks_cflags.core" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_COMPILER_MISC}"/>
                                     									
@@ -587,13 +587,13 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.c.compiler.option.include.paths.2038091548" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.2038091548" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="sbi.gnu.c.compiler.option.frameworks.core.201431878" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
+                                <option id="sbi.gnu.c.compiler.option.frameworks.core.201431878" name="Tizen-Frameworks" superClass="sbi.gnu.c.compiler.option.frameworks.core" valueType="userObjs">
                                     									
                                     <listOptionValue builtIn="false" value="Native_API"/>
                                     									
@@ -615,7 +615,7 @@
                                 								
                                 <option defaultValue="false" id="sbi.gnu.cpp.linker.option.noundefined.core.108222538" name="Report unresolved symbol references (-Wl,--no-undefined)" superClass="sbi.gnu.cpp.linker.option.noundefined.core" valueType="boolean"/>
                                 								
-                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1838858372" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" valueType="stringList">
+                                <option id="sbi.gnu.cpp.linker.option.frameworks_lflags.core.1838858372" name="Tizen-Frameworks-Other-Lflags" superClass="sbi.gnu.cpp.linker.option.frameworks_lflags.core" valueType="stringList">
                                     									
                                     <listOptionValue builtIn="false" value="${TC_LINKER_MISC}"/>
                                     									
@@ -629,19 +629,17 @@
                                     									
                                     <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/usr/lib&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="-L&quot;${SBI_SYSROOT}/../iot-things-4.0-device.core/usr/lib&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="$(RS_LIBRARIES)"/>
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.paths.630690609" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                <option id="gnu.cpp.link.option.paths.630690609" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.libs.1849184143" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                <option id="gnu.cpp.link.option.libs.1849184143" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="oicdastack"/>
                                     									
@@ -730,5 +728,9 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="refreshScope"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>
