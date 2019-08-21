@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef __POSITION_FINDER_RESOURCE_ILLUMINANCE_SENSOR_H__
-#define __POSITION_FINDER_RESOURCE_ILLUMINANCE_SENSOR_H__
+#ifndef __RESOURCE_ILLUMINANCE_SENSOR_H__
+#define __RESOURCE_ILLUMINANCE_SENSOR_H__
 
 /**
  * @brief Reads the value of i2c bus connected illuminance sensor.
@@ -28,5 +28,5 @@
  */
 extern int resource_read_illuminance_sensor(int i2c_bus, uint32_t *out_value);
 
-#endif /* __POSITION_FINDER_RESOURCE_ILLUMINANCE_SENSOR_H__ */
+#endif /* __RESOURCE_ILLUMINANCE_SENSOR_H__ */
 

@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef __POSITION_FINDER_RESOURCE_INTERNAL_H__
-#define __POSITION_FINDER_RESOURCE_INTERNAL_H__
+#ifndef __RESOURCE_INTERNAL_H__
+#define __RESOURCE_INTERNAL_H__
 
 #include <peripheral_io.h>
 
@@ -44,4 +44,4 @@ typedef struct _resource_read_cb_s resource_read_s;
 extern resource_s *resource_get_info(int pin_num);
 extern void resource_close_all(void);
 
-#endif /* __POSITION_FINDER_RESOURCE_INTERNAL_H__ */
+#endif /* __RESOURCE_INTERNAL_H__ */

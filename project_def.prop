@@ -1,9 +1,9 @@
-APPNAME = smart-blind
+APPNAME = illuminance
 
 type = app
 profile = iot-headless-4.0
 
-USER_SRCS = src/smart-blind.c
+USER_SRCS = src/illuminance.c
 USER_DEFS =
 USER_INC_DIRS = inc, inc/sdk
 USER_OBJS =

@@ -16,15 +16,15 @@
  * limitations under the License.
  */
 
-#ifndef __POSITION_FINDER_SERVER_H__
-#define __POSITION_FINDER_SERVER_H__
+#ifndef __ILLUMINANCE_LOG__
+#define __ILLUMINANCE_LOG__
 
 #include <dlog.h>
 
 #ifdef  LOG_TAG
 #undef  LOG_TAG
 #endif
-#define LOG_TAG "TT"
+#define LOG_TAG "ILL"
 
 #if !defined(_D)
 #define _D(fmt, arg...) dlog_print(DLOG_DEBUG, LOG_TAG, "[%s:%d] " fmt "\n", __func__, __LINE__, ##arg)
@@ -99,4 +99,4 @@
 
 
 
-#endif /* __POSITION_FINDER_SERVER_H__ */
+#endif /* __ILLUMINANCE_LOG__ */

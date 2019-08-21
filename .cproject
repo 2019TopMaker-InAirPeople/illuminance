@@ -33,7 +33,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="smart-blind" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345" name="Debug" parent="org.tizen.nativecore.config.sbi.gcc45.app.debug">
+                <configuration artifactName="illuminance" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345" name="Debug" parent="org.tizen.nativecore.config.sbi.gcc45.app.debug">
                     					
                     <folderInfo id="org.tizen.nativecore.config.sbi.gcc45.app.debug.1579263345." name="/" resourcePath="">
                         						
@@ -41,7 +41,7 @@
                             							
                             <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.tizen.nativeide.target.sbi.gnu.platform.base.588449540" osList="linux,win32" superClass="org.tizen.nativeide.target.sbi.gnu.platform.base"/>
                             							
-                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/smart-blind}/Debug" enableAutoBuild="true" id="org.tizen.nativecore.target.sbi.gnu.builder.961972489" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
+                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/illuminance}/Debug" enableAutoBuild="true" id="org.tizen.nativecore.target.sbi.gnu.builder.961972489" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
                             							
                             <tool command="arm-linux-gnueabi-ar" id="org.tizen.nativecore.tool.sbi.gnu.archiver.786630560" name="Archiver" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver"/>
                             							
@@ -389,7 +389,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="smart-blind" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447" name="Release" parent="org.tizen.nativecore.config.sbi.gcc45.app.release">
+                <configuration artifactName="illuminance" buildArtefactType="org.tizen.nativecore.buildArtefactType.app" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.tizen.nativecore.buildArtefactType.app,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;" id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447" name="Release" parent="org.tizen.nativecore.config.sbi.gcc45.app.release">
                     					
                     <folderInfo id="org.tizen.nativecore.config.sbi.gcc45.app.release.502396447." name="/" resourcePath="">
                         						
@@ -397,7 +397,7 @@
                             							
                             <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.tizen.nativeide.target.sbi.gnu.platform.base.1474242873" osList="linux,win32" superClass="org.tizen.nativeide.target.sbi.gnu.platform.base"/>
                             							
-                            <builder buildPath="${workspace_loc:/smart-blind}/Release" id="org.tizen.nativecore.target.sbi.gnu.builder.1319584467" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
+                            <builder buildPath="${workspace_loc:/illuminance}/Release" id="org.tizen.nativecore.target.sbi.gnu.builder.1319584467" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Tizen Application Builder" superClass="org.tizen.nativecore.target.sbi.gnu.builder"/>
                             							
                             <tool command="arm-linux-gnueabi-ar" id="org.tizen.nativecore.tool.sbi.gnu.archiver.1688011617" name="Archiver" superClass="org.tizen.nativecore.tool.sbi.gnu.archiver"/>
                             							
@@ -705,7 +705,7 @@
     	
     <storageModule moduleId="cdtBuildSystem" version="4.0.0">
         		
-        <project id="smart-blind.org.tizen.nativecore.target.sbi.gcc45.app.1161948160" name="Tizen Native Application" projectType="org.tizen.nativecore.target.sbi.gcc45.app"/>
+        <project id="illuminance.org.tizen.nativecore.target.sbi.gcc45.app.1161948160" name="Tizen Native Application" projectType="org.tizen.nativecore.target.sbi.gcc45.app"/>
         	
     </storageModule>
     	
