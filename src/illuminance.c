@@ -28,7 +28,7 @@
 #include "resource.h"
 
 #define I2C_BUS_NUMBER (1)
-#define SENSOR_GATHER_INTERVAL (0.1f)
+#define SENSOR_GATHER_INTERVAL (1)
 
 typedef struct app_data_s {
 	Ecore_Timer *getter_illuminance;

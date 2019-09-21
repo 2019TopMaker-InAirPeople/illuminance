@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest xmlns="http://tizen.org/ns/packages" api-version="5.0" package="org.example.illuminance" version="1.0.0">
-    <profile name="iot-headless"/>
+    <profile name="iot-headed"/>
     <service-application appid="org.example.illuminance" auto-restart="false" exec="illuminance" multiple="false" nodisplay="true" on-boot="false" taskmanage="false" type="capp">
         <label>Illuminance</label>
         <icon>illuminance.png</icon>
