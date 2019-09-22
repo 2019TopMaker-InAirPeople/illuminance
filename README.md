@@ -24,5 +24,8 @@
 * Tizen IoT-headed 개발보드(Raspberry Pi 3 Model B+) : PM2008 미세먼지 센서 부착, https://github.com/InAirPeople-Inc/illuminance.git
 
 ## 구현사항
-* PM2008 미세먼지 센서 구동 모듈
+* I2C 사용 : PM2008 미세먼지 센서 구동 모듈
+* 클라우드 사용하지 않음
+* 카메라 사용하지 않음
+* 이미지 분석 사용하지 않음
   
